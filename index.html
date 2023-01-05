@@ -9,10 +9,14 @@
 </head>
 <body>
     <nav id="navbar">
-        <h1>On The Lambe</h1>
-        <li>About</li>
-        <li>Services</li>
-        <li>Contact</li>
+        <div class="left-bar-container">
+            <h1>On The Lambe</h1>
+        </div>
+        <div class="right-bar-container">
+        <li class="link">About</li>
+        <li class="link">Services</li>
+        <li class="link">Contact</li>
+        </div>
     </nav>
     <header>
         <h2>On The Lambe provides personal web development services. I build and maintain 
@@ -20,32 +24,41 @@
         promoted using the latest search engine optimization techniques to guarantee your 
         website is among the first recommended when searched.
         </h2>
-        <img src="https://images.pexels.com/photos/9912120/pexels-photo-9912120.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        <img class="blacklamb" src="https://images.pexels.com/photos/9912120/pexels-photo-9912120.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         alt="Picture of a black lamb">
     </header>
-    <div>
-        <img src="https://images.pexels.com/photos/7455189/pexels-photo-7455189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt="Another picture of a lamb">
-        <p>Here's a picture of a lamb</p>
-        <img src="https://images.pexels.com/photos/7455188/pexels-photo-7455188.png?auto=compress&cs=tinysrgb&w=1600" 
-        alt="A third picture of a lamb">
-        <p>Here's a picture of another lamb</p>
-        <img src="https://images.pexels.com/photos/10878958/pexels-photo-10878958.jpeg?auto=compress&cs=tinysrgb&w=1600" 
-        alt="A fourth picture of a lamb">
-        <p>Yet another lamb</p>
+    <div id="gallery">
+        <div class="lamb1">
+            <img class="lamb" src="https://images.pexels.com/photos/7455189/pexels-photo-7455189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Another picture of a lamb"> 
+            <span class="caption">Here's a picture of a lamb</span>
+        </div>
+        <div class="lamb2">
+            <img class="lamb" src="https://images.pexels.com/photos/7455188/pexels-photo-7455188.png?auto=compress&cs=tinysrgb&w=1600" 
+            alt="A third picture of a lamb">
+            <span class="caption">Here's a picture of another lamb</span>
+        </div>
+        <div class="lamb3">
+            <img class="lamb" src="https://images.pexels.com/photos/10878958/pexels-photo-10878958.jpeg?auto=compress&cs=tinysrgb&w=1600" 
+            alt="A fourth picture of a lamb">
+            <span class="caption">Yet another lamb</span>
+        </div>
     </div>
-    <div>
+    <div class="quote">
         <h2>"Here's a convincing quote from an extremely satisfied customer. This person 
             is definitely not related to me in any way and totally not compensated 
             for this review."
         </h2>
         <p>-Jane Doe</p>
     </div>
-    <div>
+    <div class="submit">
         <textarea id="textarea" rows="5" cols="40">
         </textarea>
         <input id="submit" type="submit"></input>
     </div>
-    <footer>Copyright @ The Odin Project 2021</footer>
+    <footer>
+        <a class="source" href="https://github.com/PaytonLambe" target="_blank">Project 
+            by Payton Lambe</a>
+    </footer>
 </body>
 </html>
